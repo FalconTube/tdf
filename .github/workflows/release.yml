@@ -27,6 +27,9 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y libfontconfig1-dev libgoogle-perftools-dev google-perftools
 
+    - name: Install zig
+      uses: mlugg/setup-zig@v2
+
     - uses: actions/checkout@v4
 
     - name: Run GoReleaser
